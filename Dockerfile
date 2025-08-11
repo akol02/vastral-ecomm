@@ -5,7 +5,7 @@ FROM maven:3.8.4-openjdk-17 AS build
 WORKDIR /app
 
 # Add a volume to store logs
-VOLUME /tmp
+# VOLUME /tmp
 
 # Copy the JAR file to the container
 ARG JAR_FILE=target/*.jar
